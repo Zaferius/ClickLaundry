@@ -81,7 +81,7 @@ public class FinanceManager : MonoBehaviour
         PlayerPrefs.SetInt("TotalCoin", totalCoin);
         PlayerPrefs.Save();
         
-        SoundManager.Instance.PlaySound("CoinPickup", 0.7f);
+        SoundManager.Instance.PlaySound("CoinPickup", 0.3f);
     }
     
     private static string SetCurrency(float amount)

@@ -156,7 +156,7 @@ public class SewingMachine : MonoBehaviour
         productCircles.transform.DOScale(0.85f, 0.5f).SetLoops(-1, LoopType.Yoyo).SetId("CircleScale" + transform.name);
         productDoneSparkle.Play();
         sewingDoneFx.Play();
-        SoundManager.Instance.PlaySound("SewingDone", 0.6f);
+        SoundManager.Instance.PlaySound("SewingDone", 0.1f);
     }
 
     public void ResetMachine()

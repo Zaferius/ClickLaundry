@@ -67,7 +67,7 @@ public class SoundManager : MonoBehaviour
         }
     }
     
-    public void PlaySound(AudioClip clip)
+    public void PlaySound(AudioClip clip, float volume)
     {
         if (clip != null)
         {
@@ -76,6 +76,7 @@ public class SoundManager : MonoBehaviour
 
             if (availableSource != null)
             {
+                availableSource.volume = volume;
                 availableSource.PlayOneShot(clip);
             }
         }

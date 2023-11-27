@@ -551,7 +551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -14.999924, y: -19.300049}
+  m_AnchoredPosition: {x: -14.999924, y: -45}
   m_SizeDelta: {x: 1, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &174368567
@@ -788,11 +788,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 3700918452730222609, guid: fe870f1bb7d0abb49b20189fd5861d3f, type: 3}
-  - {fileID: 3700918452730222609, guid: 8c816ee482757344da1fb09e6d159bf8, type: 3}
-  - {fileID: 3700918452730222609, guid: 99c935cdd6ef8944791c27c5c40d21b0, type: 3}
-  - {fileID: 3700918452730222609, guid: 9c14824c7396e5c4d8db3d9c3e129009, type: 3}
-  - {fileID: 3700918452730222609, guid: 1a38dc73f2daf4444b4afc3868e9c5e5, type: 3}
-  - {fileID: 3700918452730222609, guid: e388e127075f01c4883c267ae553f4a9, type: 3}
+  - {fileID: 3700918452730222609, guid: 7d47f3107b1ca6d42a15f2c976597b35, type: 3}
+  - {fileID: 3700918452730222609, guid: 6383600eeb914484bab97dc20968808e, type: 3}
+  - {fileID: 3700918452730222609, guid: 467f99e0e93fa3d459ad1f5ae0481d3e, type: 3}
+  - {fileID: 3700918452730222609, guid: 75e3fc5044bcdad448d456f3afe3412a, type: 3}
+  - {fileID: 3700918452730222609, guid: c9cb693af34618943be9617caca26c67, type: 3}
   currentLevelNumber: 0
   loadType: 0
 --- !u!4 &326452938

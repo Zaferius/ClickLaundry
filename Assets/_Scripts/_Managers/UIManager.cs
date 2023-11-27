@@ -125,7 +125,7 @@ public class UIManager : MonoBehaviour
         sewButton.transform.parent.gameObject.SetActive(true);
         buyFabricButton.transform.parent.gameObject.SetActive(false);
         
-        SoundManager.Instance.PlaySound("Whoosh1", 0.4f);
+        SoundManager.Instance.PlaySound("Whoosh1", 0.2f);
     }
     
     private void ToSewArea()
@@ -135,6 +135,6 @@ public class UIManager : MonoBehaviour
         paintButton.transform.parent.gameObject.SetActive(true);
         buyFabricButton.transform.parent.gameObject.SetActive(true);
         
-        SoundManager.Instance.PlaySound("Whoosh2", 0.5f);
+        SoundManager.Instance.PlaySound("Whoosh2", 0.35f);
     }
 }

@@ -84,7 +84,7 @@ public class PaintBucket : MonoBehaviour
     {
         isActive = true;
         machineState = MachineState.Working;
-        SoundManager.Instance.PlaySound("BubbleLoop", 0.135f, true);
+        SoundManager.Instance.PlaySound("BubbleLoop", 0.03f, true);
         boilingEffect.Play();
         circleHolder.transform.DOScale(1, 0.2f).SetEase(Ease.OutBack);
         product.transform.GetChild(0).GetComponent<MeshRenderer>().material.DOColor(bucketColor, workTime);
@@ -110,16 +110,15 @@ public class PaintBucket : MonoBehaviour
         productTemp = product;
         
         productTemp.transform.DOScale(1.5f, 1.75f);
-        productTemp.transform.DOLocalMove(new Vector3(10,0,-5), 2f).OnComplete(() =>
+        productTemp.transform.DOLocalMove(new Vector3(10,0,-5), 1.75f).OnComplete(() =>
         {
-            TimeManager.Instance.transform.DOMoveX(0, 0.7f).OnComplete(() =>
+            TimeManager.Instance.transform.DOMoveX(0, 0.3f).OnComplete(() =>
             {
-                SoundManager.Instance.PlaySound("PoofCut", 0.175f);
+                SoundManager.Instance.PlaySound("PoofCut", 0.15f);
                 productTemp.transform.DOScale(0,0.2f).SetEase(Ease.InBack).OnComplete(() =>
                 {
                     Instantiate(GameManager.Instance.productToCoinFx, productTemp.transform.position, Quaternion.identity);
-                  
-                    LevelSpecial.Instance.CheckGameStatus();
+
                     StartCoroutine(DelayedCoins());
                     productTemp.SelfDestroy(3);
                 });
@@ -155,6 +154,11 @@ public class PaintBucket : MonoBehaviour
                     FinanceManager.Instance.GainCoin(coinToCollect / randomAmount);
                 });
             });
+
+            if (i == randomAmount - 1)
+            {
+                LevelSpecial.Instance.CheckGameStatus();
+            }
             
             yield return new WaitForSeconds(0.06f);
         }

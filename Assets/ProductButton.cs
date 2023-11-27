@@ -30,6 +30,13 @@ public class ProductButton : MonoBehaviour
         ownerMachine.displayProduct.transform.DOScale(0.8f, 0.4f);
         ownerMachine.displayProduct.transform.DOMove(UIManager.Instance.paintButtonWorldPos, 0.4f).OnComplete(() =>
         {
+            GameManager.Instance.readyToPaint++;
+            
+            if (GameManager.Instance.readyToPaint >= 1)
+            {
+                UIManager.Instance.StartCoroutine(UIManager.Instance.ColorizePaintButtonC(true));
+            }
+            
             ownerMachine.displayProduct.transform.localPosition = displayProductDefPos;
             ownerMachine.displayProduct.transform.localScale = Vector3.zero;
             ownerMachine.productDoneSparkle.Stop();
@@ -39,7 +46,7 @@ public class ProductButton : MonoBehaviour
                 UIManager.Instance.paintButton.transform.parent.DOScale(1, 0.2f);
             });
             
-            GameManager.Instance.readyToPaint++;
+           
 
            var product = Instantiate(ownerMachine.doneToPaintProduct, GameManager.Instance.paintingAreaLayoutOrganizer.transform, true);
            product.transform.localScale = Vector3.zero;
@@ -60,11 +67,8 @@ public class ProductButton : MonoBehaviour
             
         });
         
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
         
-        if (GameManager.Instance.readyToPaint >= 1)
-        {
-            UIManager.Instance.StartCoroutine(UIManager.Instance.ColorizePaintButtonC(true));
-        }
+       
     }
 }

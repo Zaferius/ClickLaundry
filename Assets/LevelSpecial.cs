@@ -117,7 +117,7 @@ public class LevelSpecial : MonoBehaviour
 
             if (!(calc <= 0.45f)) continue;
             
-            SoundManager.Instance.PlaySound("CorrectItem");
+            SoundManager.Instance.PlaySound("CorrectItem", 0.3f);
             product.transform.GetChild(2).gameObject.SetActive(true);
             product.isCorrectProduct = true;
             

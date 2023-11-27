@@ -262,7 +262,7 @@ public class GameManager : MonoBehaviour
             UIManager.Instance._GameWin();
 
             var randomClip = SoundManager.Instance.soundClips.Where(c => c.ToString().Contains("levelComplete")).ToList();
-            SoundManager.Instance.PlaySound(randomClip[Random.Range(0,randomClip.Count)]);
+            SoundManager.Instance.PlaySound(randomClip[Random.Range(0,randomClip.Count)], 0.1f);
         });
         
       
