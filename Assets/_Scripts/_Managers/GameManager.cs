@@ -188,6 +188,9 @@ public class GameManager : MonoBehaviour
                                     UIManager.Instance.StartCoroutine(UIManager.Instance.ColorizePaintButtonC(false));
                                 }
                                 paintBucket.ToBucket(selectedObject.GetComponent<PlayObject>());
+                                
+                                SoundManager.Instance.PlaySound("SelectionAlternative", 0.4f);
+                                
                                 TimeManager.Instance.transform.DOMoveX(0, 0.1f).OnComplete(() =>
                                 {
                                     paintingAreaLayoutOrganizer.ArrangeChildrenHorizontally();
