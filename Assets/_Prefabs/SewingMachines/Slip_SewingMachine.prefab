@@ -16217,7 +16217,6 @@ GameObject:
   - component: {fileID: 8364642397904610507}
   - component: {fileID: 8364642397904610508}
   - component: {fileID: 8364642397904610510}
-  - component: {fileID: 8364642397904610509}
   m_Layer: 8
   m_Name: Slip_SewingMachine
   m_TagString: Untagged
@@ -16353,31 +16352,6 @@ MonoBehaviour:
   sewingDoneFx: {fileID: 366406960292311736}
   lockedObjectsHolder: {fileID: 9052384954784444228}
   requiredLevelText: {fileID: 7724473446964566038}
---- !u!114 &8364642397904610509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8364642397904610512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf1c4f463745d94f971d24d6df49fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useDefaultBackgroundColor: 1
-  backgroundColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  useDefaultTextColor: 0
-  textColor:
-    serializedVersion: 2
-    rgba: 4282906111
-  font: {fileID: 0}
-  fontSize: 12
-  fontStyle: 0
-  alignment: 0
-  textDropShadow: 0
 --- !u!1 &8364642397920862178
 GameObject:
   m_ObjectHideFlags: 0

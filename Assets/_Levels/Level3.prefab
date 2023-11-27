@@ -503,7 +503,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3700918452174042399}
-  - component: {fileID: 3700918452174042398}
   m_Layer: 0
   m_Name: MainObjects
   m_TagString: Untagged
@@ -529,31 +528,6 @@ Transform:
   m_Father: {fileID: 3700918452730222608}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3700918452174042398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3700918452174042396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf1c4f463745d94f971d24d6df49fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useDefaultBackgroundColor: 1
-  backgroundColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  useDefaultTextColor: 0
-  textColor:
-    serializedVersion: 2
-    rgba: 4294955074
-  font: {fileID: 0}
-  fontSize: 12
-  fontStyle: 1
-  alignment: 0
-  textDropShadow: 0
 --- !u!1 &3700918452194992070
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +620,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3700918452296058269}
-  - component: {fileID: 3700918452296058268}
   m_Layer: 0
   m_Name: SewingArea
   m_TagString: Untagged
@@ -674,31 +647,6 @@ Transform:
   m_Father: {fileID: 3700918452730222608}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3700918452296058268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3700918452296058258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf1c4f463745d94f971d24d6df49fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useDefaultBackgroundColor: 1
-  backgroundColor:
-    serializedVersion: 2
-    rgba: 1374309601
-  useDefaultTextColor: 0
-  textColor:
-    serializedVersion: 2
-    rgba: 4294736383
-  font: {fileID: 0}
-  fontSize: 12
-  fontStyle: 1
-  alignment: 0
-  textDropShadow: 0
 --- !u!1 &3700918452463716203
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +753,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3700918452464762435}
-  - component: {fileID: 3700918452464762434}
   m_Layer: 0
   m_Name: PaintingArea
   m_TagString: Untagged
@@ -833,31 +780,6 @@ Transform:
   m_Father: {fileID: 3700918452730222608}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3700918452464762434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3700918452464762432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf1c4f463745d94f971d24d6df49fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useDefaultBackgroundColor: 1
-  backgroundColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  useDefaultTextColor: 0
-  textColor:
-    serializedVersion: 2
-    rgba: 4282122059
-  font: {fileID: 0}
-  fontSize: 12
-  fontStyle: 1
-  alignment: 0
-  textDropShadow: 0
 --- !u!1 &3700918452594527245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1022,6 @@ MonoBehaviour:
     product: 0
     objectiveObject: {fileID: 0}
   fabricCost: 200
-  remainingObjectives: 0
 --- !u!1 &6426141102107613083
 GameObject:
   m_ObjectHideFlags: 0

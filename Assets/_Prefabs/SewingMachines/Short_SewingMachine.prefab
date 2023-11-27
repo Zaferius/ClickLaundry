@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 2215726293592060352}
   - component: {fileID: 2215726293592060353}
   - component: {fileID: 2215726293592060359}
-  - component: {fileID: 2215726293592060358}
   m_Layer: 8
   m_Name: Short_SewingMachine
   m_TagString: Untagged
@@ -182,31 +181,6 @@ MonoBehaviour:
   sewingDoneFx: {fileID: 5773500296788549021}
   lockedObjectsHolder: {fileID: 855492211664503544}
   requiredLevelText: {fileID: 2111359371226559914}
---- !u!114 &2215726293592060358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2215726293592060357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf1c4f463745d94f971d24d6df49fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useDefaultBackgroundColor: 1
-  backgroundColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  useDefaultTextColor: 0
-  textColor:
-    serializedVersion: 2
-    rgba: 4282906111
-  font: {fileID: 0}
-  fontSize: 12
-  fontStyle: 0
-  alignment: 0
-  textDropShadow: 0
 --- !u!1 &2215726293631718571
 GameObject:
   m_ObjectHideFlags: 0

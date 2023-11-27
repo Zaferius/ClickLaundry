@@ -6580,7 +6580,6 @@ GameObject:
   - component: {fileID: 2585667671989502405}
   - component: {fileID: 290152621819671821}
   - component: {fileID: 290152621819671822}
-  - component: {fileID: 290152621819671820}
   m_Layer: 8
   m_Name: Sock_SewingMachine
   m_TagString: Untagged
@@ -6716,31 +6715,6 @@ MonoBehaviour:
   sewingDoneFx: {fileID: 5437053749854524178}
   lockedObjectsHolder: {fileID: 8897746865943071966}
   requiredLevelText: {fileID: 7919995744653097868}
---- !u!114 &290152621819671820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4099084336384106512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf1c4f463745d94f971d24d6df49fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useDefaultBackgroundColor: 1
-  backgroundColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  useDefaultTextColor: 0
-  textColor:
-    serializedVersion: 2
-    rgba: 4282906111
-  font: {fileID: 0}
-  fontSize: 12
-  fontStyle: 0
-  alignment: 0
-  textDropShadow: 0
 --- !u!1 &4163131424192072612
 GameObject:
   m_ObjectHideFlags: 0

@@ -435,7 +435,6 @@ GameObject:
   - component: {fileID: 7798181334976407201}
   - component: {fileID: 7798181334976407202}
   - component: {fileID: 7798181334976407212}
-  - component: {fileID: 7798181334976407203}
   m_Layer: 8
   m_Name: Bra_SewingMachine
   m_TagString: Untagged
@@ -571,31 +570,6 @@ MonoBehaviour:
   sewingDoneFx: {fileID: 3379125051588342147}
   lockedObjectsHolder: {fileID: 1626467468118683639}
   requiredLevelText: {fileID: 1354209445}
---- !u!114 &7798181334976407203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7798181334976407214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf1c4f463745d94f971d24d6df49fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useDefaultBackgroundColor: 1
-  backgroundColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  useDefaultTextColor: 0
-  textColor:
-    serializedVersion: 2
-    rgba: 4282906111
-  font: {fileID: 0}
-  fontSize: 12
-  fontStyle: 0
-  alignment: 0
-  textDropShadow: 0
 --- !u!1 &7798181335072385724
 GameObject:
   m_ObjectHideFlags: 0
