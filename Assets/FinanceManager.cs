@@ -49,6 +49,16 @@ public class FinanceManager : MonoBehaviour
 
     private void Start()
     {
+       PrepareCoins();
+    }
+
+    private void Update()
+    {
+        CalculateCoins();
+    }
+
+    private void PrepareCoins()
+    {
         totalCoin = PlayerPrefs.GetInt("TotalCoin");
 
         if (totalCoin < 500)
@@ -57,11 +67,6 @@ public class FinanceManager : MonoBehaviour
             totalCoin = PlayerPrefs.GetInt("TotalCoin");
             PlayerPrefs.Save();
         }
-    }
-
-    private void Update()
-    {
-        CalculateCoins();
     }
 
     public void GainCoin(int amount)

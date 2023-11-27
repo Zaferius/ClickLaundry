@@ -21,14 +21,11 @@ public class PlayObject : MonoBehaviour
     public bool isCorrectProduct;
     
     [HideInInspector] public Vector3 startingPos;
-    [HideInInspector] public Vector3 startingScale;
     [HideInInspector] public List<Transform> torusList = new List<Transform>();
 
     private void Start()
     {
         startingPos = transform.localPosition;
-        startingScale = transform.localScale;
-        
     }
 
     public void Selection()

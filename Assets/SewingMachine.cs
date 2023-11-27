@@ -66,10 +66,7 @@ public class SewingMachine : MonoBehaviour
     {
         SetMachineStats();
         CheckMachine();
-
-        displayProduct.transform.localScale = Vector3.zero;
-        _needleYPos = needle.transform.position.y;
-        workTimer = workTime;
+        PrepareMachine();
     }
 
     private void Update()
@@ -87,6 +84,13 @@ public class SewingMachine : MonoBehaviour
         isActive = false;
         workTimer = workTime;
         DeActivate();
+    }
+
+    private void PrepareMachine()
+    {
+        displayProduct.transform.localScale = Vector3.zero;
+        _needleYPos = needle.transform.position.y;
+        workTimer = workTime;
     }
 
     public void Activate()

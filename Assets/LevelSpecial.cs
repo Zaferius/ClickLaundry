@@ -46,7 +46,6 @@ public class LevelSpecial : MonoBehaviour
     public List<Objective> objectives = new List<Objective>();
   
     public int fabricCost;
-    public int remainingObjectives;
 
     private void Awake()
     {
@@ -55,27 +54,26 @@ public class LevelSpecial : MonoBehaviour
 
     void Start()
     {
-        remainingObjectives += objectives.Count;
         CreateObjectiveTable();
+        PrepareFabrics();
+    }
 
-        for (int i = 0; i < startingFabric; i++)
+    private void PrepareFabrics()
+    {
+        for (var i = 0; i < startingFabric; i++)
         {
             var fabric = Instantiate(GameManager.Instance.fabricProduct, new Vector3(0,15,0), Quaternion.identity);
-            fabric.transform.gameObject.layer = 0;
-
-            fabric.transform.parent = GameManager.Instance.sewingAreaLayoutOrganizer.transform;
-        
-            // GameManager.Instance.sewingAreaLayoutOrganizer.ArrangeChildrenHorizontally();
-            fabric.startingPos = fabric.transform.localPosition;
-            fabric.transform.gameObject.layer = 6;
+            var transform1 = fabric.transform;
+            transform1.gameObject.layer = 0;
+            transform1.parent = GameManager.Instance.sewingAreaLayoutOrganizer.transform;
+            fabric.startingPos = transform1.localPosition;
+            transform1.gameObject.layer = 6;
         }
-        
-        
-        
+
         GameManager.Instance.sewingAreaLayoutOrganizer.ArrangeChildrenHorizontallyFast();
     }
 
-    public void CreateObjectiveTable()
+    private void CreateObjectiveTable()
     {
         foreach (var o in objectives)
         {
@@ -103,15 +101,11 @@ public class LevelSpecial : MonoBehaviour
 
     public void CheckGameStatus()
     {
-        if (GameManager.Instance.gameState == GameManager.GameState.Play)
+        if (GameManager.Instance.gameState != GameManager.GameState.Play) return;
+        if (objectives.Count == 0)
         {
-            if (objectives.Count == 0)
-            {
-                GameManager.Instance.GameWin();
-            }
+            GameManager.Instance.GameWin();
         }
-        
-       
     }
     public void CheckObjectiveMatch(PlayObject product)
     {
@@ -131,7 +125,6 @@ public class LevelSpecial : MonoBehaviour
             {
                 Destroy(objectives[i].objectiveObject);
                 objectives.Remove(objectives[i]);
-                remainingObjectives--;
             });
 
             break;

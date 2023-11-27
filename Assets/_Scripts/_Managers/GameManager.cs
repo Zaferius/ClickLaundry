@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            if (Input.GetMouseButton(0) && holding && selectedObject != null) // set objects position to mouse position and give y offset
+            if (Input.GetMouseButton(0) && holding && selectedObject != null) 
             {
                 RaycastHit hit;
 
@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
                 }
             }
             
-            if (Input.GetMouseButtonUp(0) && holding && selectedObject != null) // Drop selected object & set selected object null
+            if (Input.GetMouseButtonUp(0) && holding && selectedObject != null) 
             {
                 Vector3 dropPosition = selectedObject.transform.position;
 
@@ -177,8 +177,6 @@ public class GameManager : MonoBehaviour
                         if (hit.collider != null)
                         {
                             var paintBucket = hit.transform.GetComponent<PaintBucket>();
-                            
-                            print(paintBucket.machineState);
 
                             if (paintBucket.machineState == PaintBucket.MachineState.Ready)
                             {
