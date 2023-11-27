@@ -27,7 +27,6 @@ public class PlayObject : MonoBehaviour
     {
         startingPos = transform.localPosition;
     }
-
     public void Selection()
     {
         if (objectType == ObjectType.Fabric)
@@ -40,7 +39,6 @@ public class PlayObject : MonoBehaviour
         }
       
     }
-
     IEnumerator DelayedSelectionBlop()
     {
         for (var i = 0; i < torusList.Count; i++)
@@ -66,12 +64,10 @@ public class PlayObject : MonoBehaviour
             }
         }
     }
-
     public void StartPosRemap()
     {
         startingPos = transform.localPosition;
     }
-
     public void SelfDestroy(float delay)
     {
         TimeManager.Instance.transform.DOMoveX(0, delay).OnComplete(() =>
