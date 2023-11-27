@@ -28,7 +28,7 @@ public class ProductButton : MonoBehaviour
         var displayProductDefPos =   ownerMachine.displayProduct.transform.localPosition;
         
         ownerMachine.displayProduct.transform.DOScale(0.8f, 0.4f);
-        ownerMachine.displayProduct.transform.DOMove(UIManager.Instance.paintButtonWorldPos + new Vector3(-1,0,0), 0.4f).OnComplete(() =>
+        ownerMachine.displayProduct.transform.DOMove(UIManager.Instance.paintButtonWorldPos, 0.4f).OnComplete(() =>
         {
             ownerMachine.displayProduct.transform.localPosition = displayProductDefPos;
             ownerMachine.displayProduct.transform.localScale = Vector3.zero;
