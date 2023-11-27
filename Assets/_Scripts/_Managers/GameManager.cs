@@ -154,6 +154,8 @@ public class GameManager : MonoBehaviour
                                 Destroy(selectedObject);
                                 selectedObject = null;
                                 
+                                SoundManager.Instance.PlaySound("SelectionAlternative", 0.4f);
+                                
                                 TimeManager.Instance.transform.DOMoveX(0, 0.1f).OnComplete(() =>
                                 {
                                     sewingAreaLayoutOrganizer.ArrangeChildrenHorizontally();
