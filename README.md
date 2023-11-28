@@ -3,5 +3,6 @@
 <p align="center">
     <img width="200" src="" alt="Material Bread logo">
 </p>
-![ezgif-3-77902cf468](https://github.com/Zaferius/MatteLaundry/assets/47734158/42026e66-95c1-4a6d-b6d7-b242e99d1398)
 
+
+![laundryGif](https://github.com/Zaferius/MatteLaundry/assets/47734158/807c6a43-6f99-4d49-85fb-eb140a3c1ebd)
